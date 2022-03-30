@@ -28,31 +28,41 @@
                 dreams. Supplies are limited, act now!</p>
             <p>You <em>know</em> you want to!</p>
         </div>
-        <form action="example.com/path" method="post">
-            <fieldset class="form">
+        <form id="fishForm" action="example.com/path" method="post">
+            <fieldset class="fieldset">
                 <legend>Let's do this!</legend>
                 <div class="form-container">
-                    <div class="form-row">
+                    <div class="input-label">
                         <label for="firstName">FIRST NAME</label>
                         <input type="text" name="signUp" id="firstName">
+                    </div>
+                    <div class="input-label">
                         <label for="lastName">LAST NAME</label>
                         <input type="text" name="signUp" id="lastName">
                     </div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="signUp" id="email">
-                    <label for="phone">PHONE</label>
-                    <input type="tel" name="signUp" id="phone">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="signUp" id="password">
-                    <label for="pwConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="signUp" id="pwConfirm">
+                    <div class="input-label">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="signUp" id="email">
+                    </div>
+                    <div class="input-label">
+                        <label for="phone">PHONE</label>
+                        <input type="tel" name="signUp" id="phone">
+                    </div>
+                    <div class="input-label">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="signUp" id="password">
+                    </div>
+                    <div class="input-label">
+                        <label for="pwConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="signUp" id="pwConfirm">
+                    </div>
                 </div>
             </fieldset>
-            <div class="button-section">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
-            </div>
         </form>
+        <div class="button-section">
+            <button type="submit" form="fishForm">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
     </div>
 </body>
 

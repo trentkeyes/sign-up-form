@@ -379,19 +379,24 @@
   }
 
   .icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    padding: 5px;
     color: white;
     background-color: rgba(31, 31, 31, .5);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     height: 100px;
     width: 100%;
-    top: 25%;
-    margin: auto;
+    top: 30%; 
   }
 
   .odin {
-    max-height: 100%;
+    height: 95%;
+    margin-right: 8px;
   }
 
   .main {
@@ -400,8 +405,8 @@
   }
 
   .description {
-    padding-left: 40px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 150px;
     margin-top: 200px;
     margin-bottom: 40px;
     font-size: 20px;
@@ -417,34 +422,41 @@
       background-color: #ffffff;
   }
 
-  .form {
+  .fieldset {
     border-style: none;
   }
 
+  .form-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   legend {
-    margin-left: 0px;
-    padding: 10px 10px 10px 20px;
-    font-size: 22px;
+    padding: 15px 10px 15px 40px;
+    font-size: 20px;
     font-weight: 500;
   }
 
-  .form-row {
+  .input-label {
     margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+   
   }
 
-  .form-row input[type='text'] {
+  .input-label input {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 50%;
     padding: 7px;
     font-size: 14px;
   }
 
-  .form-row label {
-    font-size: small;
+  .input-label label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
   }
