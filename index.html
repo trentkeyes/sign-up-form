@@ -50,18 +50,19 @@
                     </div>
                     <div class="input-label">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="signUp" id="password">
+                        <input type="password" name="signUp" id="password" minlength="6">
+                        <span></span>
                     </div>
                     <div class="input-label">
                         <label for="pwConfirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="signUp" id="pwConfirm">
+                        <input type="password" name="signUp" id="pwConfirm" minlength="6">
                     </div>
                 </div>
             </fieldset>
         </form>
         <div class="button-section">
-            <button type="submit" form="fishForm">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <button class="button" type="submit" form="fishForm">Create Account</button>
+            <p>Already have an account? <a href="example.com/path">Log in</a></p>
         </div>
     </div>
 </body>
